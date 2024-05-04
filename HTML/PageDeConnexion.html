@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion | Rocket league Tournoi</title>
+    <link rel="icon" href="../DATA/ico.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/css_commun.css">
+    <link rel="stylesheet" href="../CSS/css_Menu.css">
+    <link rel="stylesheet" href="../CSS/css_PageDeConnexion.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../DATA/LOGOP.png" alt="Logo du site" class="logo">
+            <a href="PagePrincipale.html" class="nav-link">Tournoi 1v1 Rocket league </a>
+            <a href="Menu.html" class="nav-link">Accueil</a>
+            <a href="Apropos.html" class="nav-link">À Propos</a>
+            <a href="Travaux.html" class="nav-link">Contact</a>
+            <a href="PageDeConnexion.html" class="login-button">Connexion</a>
+        </nav>
+        </header>
+
+   
+    <div class="intro-text">
+        <img src="../DATA/LOGOP.png" alt="Logo du tournoi" class="logo">
+    </div>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Connexion</h2>
+            <form id="login-form" action="Menu.html" method="post">
+                <input type="text" name="username" placeholder="Nom d'utilisateur" required><br>
+                <div id="username-error" class="error-message error-popup"></div>
+                <input type="password" name="password" placeholder="Mot de passe" required><br>
+   
+                <p>Veuillez saisir ce captcha:</p>
+                <img src="../DATA/captcha.png" alt="Captcha"><br>
+                <input type="text" id="captcha" name="captcha" required><br>
+                <div id="captcha-error" class="error-message error-popup"></div>
+        
+                <input type="submit" value="Connexion" class="login-button">
+                <input type="reset" value="Réinitialiser" class="reset-button">
+            </form>
+        </div>
+    </div>
+    <footer>
+
+        <img src="../DATA/éee.png" alt="Logo 1">
+        <img src="../DATA/Epic_Games_logo.png" alt="Logo 3">
+        <p>© 2024 Psyonix LLC. Rocket League, Psyonix et l'intégralité des marques et logos liés sont des marques commerciales ou des marques déposées de Psyonix LLC. Tous droits réservés.</p>
+        <p>optimisation pour mozilla firefox version 124.0.2 Résolution: 1920 x 1080 et mobile:iPhone 11 pro max</p>
+        <p>Page validée et approuvée par le validateur HTML & CSS.</p>    
+      </footer>
+
+ 
+    <script src="../js/js_connexion.js"></script>
+</body>
+</html>

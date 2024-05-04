@@ -1,0 +1,124 @@
+
+    .container {
+        margin: 2% auto;
+        background-image: linear-gradient(to right, rgba(0, 21, 36, 0.9), rgba(0, 21, 36, 0.8));
+        padding: 4%;
+        border-radius: 20px;
+        width: 45%; /* Largeur de la boîte de connexion */
+        text-align: center; /* Centrer le contenu horizontalement */
+        color:  rgb(241, 251, 255); /* Couleur du texte */
+        
+        
+    }
+    .container select{
+        width: 95%; /* Largeur du champ de texte */
+        height: 42px;
+        color: #000000;
+        background: rgba(255, 255, 255, 0.8);
+        padding:5px; /* Rembourrage interne */
+        margin-top: 10px;
+        margin-bottom: 15px; /* Marge en bas du champ */
+        border-radius:5px; /* Bordure arrondie */
+    
+    }
+    .container input[type="text"]
+    {
+        width: 92%; /* Largeur du champ de texte */
+        height: 30px;
+        color: #000000;
+        background: rgba(255, 255, 255, 0.8);
+        padding:5px; /* Rembourrage interne */
+        margin-bottom: 15px; /* Marge en bas du champ */
+        border-radius:5px; /* Bordure arrondie */
+        
+    }
+    .container button.create-button {
+        width: 90%;
+        background-color: #fca311;
+        color: #ffffff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border: none;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        font-family:'Bourgeois Ultra'
+    }
+    .container button.create-button:hover {
+        background-color: rgb(255, 111, 0);
+}
+
+/* Introduction Text */
+.intro-text {
+    size: 40%;
+    text-align: center;
+    padding: 30px 0;
+    padding-bottom: 0;
+}
+
+.intro-text img {
+    width: 25%;
+    height: auto;
+}
+
+.slideshow {
+    
+    margin-top: 4%;
+    position: fixed;
+    top: 0;
+    right: -550px; /* Caché par défaut */
+    width: 300px;
+    height: 100%;
+    transition: right 0.3s ease;
+    z-index: 999;
+    background-image: linear-gradient(to right, rgba(0, 21, 36, 0.9), rgba(0, 21, 36, 0.9));
+    border-radius: 0px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+
+}
+
+.slideshow.active {
+    right: 0; /* Afficher lorsque active */
+}
+
+.slideshow-content {
+    padding: 20px;
+}
+
+.slide {
+    display: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.tournoi{
+
+    padding: 8%;
+    color:#ddd;
+}
+.tournoi h3 {
+    width: 90%; /* Largeur du bouton */
+    background-image: linear-gradient(to right, rgba(0, 21, 36, 0.9), rgba(0, 21, 36, 0.9));
+    backdrop-filter: 9px;
+    color: #ffffff; /* Couleur du texte */
+    padding: 10px; /* Rembourrage interne */
+    margin-bottom: 15px;
+    border-radius: 10px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de la souris */
+    transition: background-color 0.3s; /* Animation de transition */
+}
+.tournoi a {
+    width: 90%; /* Largeur du bouton */
+    background-color: rgb(255, 156, 42);
+    border: 1px solid rgb(255, 149, 0);
+    color: #ffffff; /* Couleur du texte */
+    padding: 10px; /* Rembourrage interne */
+    margin-bottom: 15px;
+    border-radius: 10px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de la souris */
+    transition: background-color 0.3s; /* Animation de transition */
+    text-decoration: none;
+}
