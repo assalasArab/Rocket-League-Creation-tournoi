@@ -1,3 +1,4 @@
+affichercomment();
 $(document).ready(function() {
   $("#inscription-form").submit(function(event) {
     event.preventDefault();
@@ -35,7 +36,27 @@ $(document).ready(function() {
       // Update local storage with the updated commentator array
       sessionStorage.setItem("commentateurs", JSON.stringify(commentateurs));
 
-      alert("Inscription réussie! Nom et prénom enregistrés.");
+
+      affichercomment();
     }
   });
 });
+function affichercomment() {
+  // Sélectionne l'élément où les joueurs seront affichés
+  var listeJoueurs = document.getElementById("commentateurs");
+
+  // Vide l'élément pour éviter d'afficher les joueurs en double
+  listeJoueurs.innerHTML = "";
+
+  // Récupérer la liste des joueurs depuis le sessionStorage
+  var joueursListe = JSON.parse(sessionStorage.getItem('commentateurs')) || [];
+
+  // Affiche chaque joueur dans la liste des joueurs
+  joueursListe.forEach(function (commentateurs, index) {
+      var joueurDiv = document.createElement("div");
+      joueurDiv.innerHTML = "<strong>Joueur " + (index + 1) + "</strong><br>" +
+          "Nom: " + commentateurs.nom + " " + commentateurs.prenom + "<br><br>" 
+
+      listeJoueurs.appendChild(joueurDiv);
+  });
+}

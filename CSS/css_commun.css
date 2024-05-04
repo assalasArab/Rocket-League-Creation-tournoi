@@ -1,97 +1,99 @@
 @font-face {
-    font-family: 'Bourgeois Ultra';
-    src: url('../DATA/Bourgeois-Ultra.otf') format('opentype');
+  font-family: "Bourgeois Ultra";
+  src: url("../DATA/Bourgeois-Ultra.otf") format("opentype");
 }
-    .container {
-        width:20%;
-    }
+.container {
+  width: 40%;
+}
 
 body {
-    
-    background-image: url('../DATA/background.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    font-family: 'Bourgeois Ultra', sans-serif;
-    src: url('../DATA/Bourgeois-Ultra.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-    height: 100vh;
+  background-image: url("../DATA/background.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Bourgeois Ultra", sans-serif;
+  src: url("../DATA/Bourgeois-Ultra.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  height: 100vh;
 }
 nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0% 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(to right, rgba(0, 21, 36, 0.9), rgba(0, 21, 36, 0.9));
-    color: #ffffff; 
-    text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0% 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 21, 36, 0.9),
+    rgba(0, 21, 36, 0.9)
+  );
+  color: #ffffff;
+  text-decoration: none;
 }
 .nav-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 4px;
-    background-color: #fca311; /* Couleur de la barre orange */
-    transition: width 0.3s; /* Animation de transition */
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background-color: #fca311; /* Couleur de la barre orange */
+  transition: width 0.3s; /* Animation de transition */
 }
 
 .nav-link:hover::after {
-    width: 100%; /* Largeur de la barre orange lorsqu'elle est survolée */
+  width: 100%; /* Largeur de la barre orange lorsqu'elle est survolée */
 }
-nav.site-name{
-    width: 80px;
+nav.site-name {
+  width: 80px;
 }
 
 .logo {
-    width: 120px;
-    height: auto;
+  width: 120px;
+  height: auto;
 }
 
 .site-name {
-    font-size: 30px;
-    font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    margin-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
 }
 
 .nav-link {
-    font-size: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    margin: 1.3%;
-    transition: color 0.2s ease-in-out;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 1.3%;
+  transition: color 0.2s ease-in-out;
 }
 
 .nav-link:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .login-button {
-    background-color: #fca311;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.2s ease-in-out;
+  background-color: #fca311;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .login-button:hover {
-    background-color: #fca311;
+  background-color: #fca311;
 }
 footer {
-    background-color: rgb(0, 0, 0);
-
-    color: #e5e5e5;
-    padding: 1.6%;
-    text-align: center;
-    margin-top: 6%;
+  background-color: rgb(0, 0, 0,0.5);
+  color: #e5e5e5;
+  padding: 1.6%;
+  text-align: center;
+  margin-top: 10%;
 }
 
 footer img {
-    width: 2.5%;
+  width: 2.5%;
 }

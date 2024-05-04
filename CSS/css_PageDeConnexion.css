@@ -1,85 +1,85 @@
 /* General Styles */
 @media (max-width: 1080px) {
-    .container {
-        width: 80%;
-    }
+  .container {
+    width: 80%;
+  }
 
-    .intro-text img {
-        width: 200px;
-    }
+  .intro-text img {
+    width: 200px;
+  }
 }
 
 /* Navigation Bar */
 /* Introduction Text */
 .intro-text {
-    size: 40%;
-    text-align: center;
-    padding: 30px 0;
-    padding-bottom: 0;
+  size: 40%;
+  text-align: center;
+  padding: 30px 0;
+  padding-bottom: 0;
 }
 
 .intro-text img {
-    margin-top: 2%;
-    width: 25%;
-    height: auto;
+  margin-top: 2%;
+  width: 25%;
+  height: auto;
 }
 
-
-
-.login-box h2{
-    font-size: 200%;
+.login-box h2 {
+  font-size: 200%;
 }
 .login-box {
-    background-image: linear-gradient(to right, rgba(0, 21, 36, 0.9), rgba(0, 21, 36, 0.9));
-    margin-top: 20px;
-    padding: 25px;
-    padding-top: 40px;
-    border-radius: 30px;
-    width: 400px; /* Largeur de la boîte de connexion */
-    text-align: center; /* Centrer le contenu horizontalement */
-    color:  rgb(241, 251, 255); /* Couleur du texte */
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 21, 36, 0.9),
+    rgba(0, 21, 36, 0.9)
+  );
+  margin-top: 20px;
+  padding: 25px;
+  padding-top: 40px;
+  border-radius: 30px;
+  width: 400px; /* Largeur de la boîte de connexion */
+  text-align: center; /* Centrer le contenu horizontalement */
+  color: rgb(241, 251, 255); /* Couleur du texte */
 }
-.login-box img{
-    width: 30%
+.login-box img {
+  width: 30%;
 }
-
 
 .login-box input[type="text"],
 .login-box input[type="password"] {
-    width: 80%; /* Largeur du champ de texte */
-    height: 30px;
-    color: #000000;
-    background: rgba(255, 255, 255, 0.8);
-    border:solid rgba(255, 255, 255, 0) ;
-    padding:5px; /* Rembourrage interne */
-    margin-bottom: 15px; /* Marge en bas du champ */
-    border-radius:5px; /* Bordure arrondie */
-    
+  width: 80%; /* Largeur du champ de texte */
+  height: 30px;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.8);
+  border: solid rgba(255, 255, 255, 0);
+  padding: 5px; /* Rembourrage interne */
+  margin-bottom: 15px; /* Marge en bas du champ */
+  border-radius: 5px; /* Bordure arrondie */
 }
 
 .login-box input[type="submit"],
 .login-box input[type="reset"] {
-    width: 80%; /* Largeur du champ de texte */
-    padding: 10px; /* Rembourrage interne */
-    margin-bottom: 15px; /* Marge en bas du champ */
-    border: none; /* Supprime la bordure */
-    border-radius: 10px; /* Bordure arrondie */
-    background-color: #fca311;
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    font-size: 120%;
-    font-family:'Bourgeois Ultra'
+  width: 80%; /* Largeur du champ de texte */
+  padding: 10px; /* Rembourrage interne */
+  margin-bottom: 15px; /* Marge en bas du champ */
+  border: none; /* Supprime la bordure */
+  border-radius: 10px; /* Bordure arrondie */
+  background-color: #fca311;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 120%;
+  font-family: "Bourgeois Ultra";
 }
 
 .login-box input[type="submit"]:hover,
 .login-box input[type="reset"]:hover {
-    background-color: #fc8211;
+  background-color: #fc8211;
 }
 
 .error-message {
-    font-size: small;
-    margin-bottom: 10px;
-    color: red;
+  font-size: small;
+  margin-bottom: 10px;
+  color: red;
 }

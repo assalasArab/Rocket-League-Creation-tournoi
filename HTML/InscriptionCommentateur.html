@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Ajout commentateurs(trices) | Rocket league Tournoi</title>
-  <link rel="icon" href="../DATA/ico.png" type="image/png">
-  <link rel="stylesheet" href="../CSS/css_Inscription.css">
-  <link rel="stylesheet" href="../CSS/css_commun.css">
-</head>
-<body>
-  <header>
-    <nav>
-        <img src="../DATA/LOGOP.png" alt="Logo du site" class="logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajout commentateurs(trices) | Rocket league Tournoi</title>
+    <link rel="icon" href="../DATA/ico.png" type="image/png" />
+    <link rel="stylesheet" href="../CSS/css_Inscription.css" />
+    <link rel="stylesheet" href="../CSS/css_commun.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="../DATA/LOGOP.png" alt="Logo du site" class="logo" />
         <a href="index.html" class="nav-link">Tournoi 1v1 Rocket league </a>
         <a href="Menu.html" class="nav-link">Accueil</a>
         <a href="Apropos.html" class="nav-link">À Propos</a>
         <a href="Travaux.html" class="nav-link">Contact</a>
         <a href="PageDeConnexion.html" class="login-button">Connexion</a>
-    </nav>
+      </nav>
     </header>
-  <div class="intro-text">
+    <div class="intro-text">
+      <img src="../DATA/LOGOP.png" alt="Logo du tournoi" class="logo" />
+    </div>
+    <div class="container">
+      <div>
+        <form id="inscription-form">
+          <h1>Inscription Commentateur</h1>
+          <label for="nom">Nom du(de la) Commentateur :</label>
+          <div><input type="text" id="nom" name="nom" required /></div>
+          <div id="nom-error" class="error-message error-popup"></div>
+          <label for="prenom">Prenom du(de la) Commentateur:</label>
+          <div>
+            <input
+              type="text"
+              id="prenom"
+              name="prenom"
+              pattern="[A-Za-z]+"
+              required
+            /><br />
+          </div>
+          <br />
+          <button class="create-button">Inscription</button>
+        </form>
+      </div>
+      <div>
+        <h1>Liste des Commentateurs</h1>
+        <div id="commentateurs"></div>
+      </div>
+    </div>
 
-    <img src="../DATA/LOGOP.png" alt="Logo du tournoi" class="logo">
-</div>
-  <div class="container">
-    <form id="inscription-form">
-      <h1>Inscription Commentateur(trice)</h1>
-      <label for="nom">Nom du(de la) Commentateur(trice) :</label>
-      <div><input type="text" id="nom" name="nom" required></div>
-      <div id="nom-error" class="error-message error-popup"></div>
-      <label for="prenom">Prenom du(de la) Commentateur(trice):</label>
-      <div><input type="text" id="prenom" name="prenom" pattern="[A-Za-z]+" required><br></div>
-      <br>
-      <button class="create-button">Inscription</button>
-    </form>
-  </div>
-  
-  <div id="slideshow" class="slideshow">
-</div>
+    <div id="slideshow" class="slideshow"></div>
 
-  <footer>
+    <footer>
+      <img src="../DATA/éee.png" alt="Logo 1" />
+      <img src="../DATA/Epic_Games_logo.png" alt="Logo 3" />
+      <p>
+        © 2024 Psyonix LLC. Rocket League, Psyonix et l'intégralité des marques
+        et logos liés sont des marques commerciales ou des marques déposées de
+        Psyonix LLC. Tous droits réservés.
+      </p>
+      <p>
+        optimisation pour mozilla firefox version 124.0.2 Résolution: 1920 x
+        1080 et mobile:iPhone 11 pro max
+      </p>
+      <p>Page validée et approuvée par le validateur HTML & CSS.</p>
+    </footer>
 
-    <img src="../DATA/éee.png" alt="Logo 1">
-    <img src="../DATA/Epic_Games_logo.png" alt="Logo 3">
-    <p>© 2024 Psyonix LLC. Rocket League, Psyonix et l'intégralité des marques et logos liés sont des marques commerciales ou des marques déposées de Psyonix LLC. Tous droits réservés.</p>
-    <p>optimisation pour mozilla firefox version 124.0.2 Résolution: 1920 x 1080 et mobile:iPhone 11 pro max</p>
-    <p>Page validée et approuvée par le validateur HTML & CSS.</p>    
-  </footer>
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../js/js_commentateur.js"></script> 
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/js_commentateur.js"></script>
+  </body>
 </html>
