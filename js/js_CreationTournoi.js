@@ -74,7 +74,7 @@ $(document).ready(function () {
             tournoiHTML += "<p><h3 class='terrain-tournoi'><strong>Terrain :</strong> " + terrainTournoi + "</h3></p>";
 
             // Ajouter le bouton menant vers le lien
-            tournoiHTML += "<a href='../HTML/RentrerScore.html' class='create-button'>Resultats</a>"
+            tournoiHTML += "<a href='../RentrerScore.html' class='create-button'>Resultats</a>"
 
             tournoiHTML += "<p><h3><strong>            </strong></h3></p>";
             tournoiHTML += "</div>";
