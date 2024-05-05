@@ -3,46 +3,7 @@
   src: url("../DATA/Bourgeois-Ultra.otf") format("opentype");
 }
 
-@media (max-width: 1080px) {
-  .container {
-    width: 80%;
-  }
-  .intro-text img {
-    width: 200px;
-  }
-  .gallery {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
 
-  .gallery img {
-    width: calc(33.33% - 10px);
-    margin-bottom: 20px;
-  }
-
-  .gallery :hover {
-    transform: scale(1.1);
-    transition: 0.3s cubic-bezier(0.075, 0.01, 0.49, 2);
-  }
-}
-@media (max-width: 883px) {
-  .gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .gallery img {
-    width: 90% !important;
-    margin-bottom: 20px;
-  }
-
-  .gallery :hover {
-    transform: scale(1.1);
-    transition: 0.3s cubic-bezier(0.075, 0.01, 0.49, 2);
-  }
-}
 .photo {
   position: relative;
 }
@@ -127,3 +88,68 @@
   width: 100%;
   float: right;
 }
+@media (max-width: 1080px) {
+  .container {
+    width: 80%;
+  }
+  .intro-text img {
+    width: 200px;
+  }
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .gallery img {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .gallery :hover {
+    transform: scale(1.1);
+    transition: 0.3s cubic-bezier(0.075, 0.01, 0.49, 2);
+  }
+}
+@media (max-width: 767px) {
+  .photo img {
+    filter: blur(1px);
+    width:100%;
+    height: auto;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery img {
+    width: 90% !important;
+    margin-bottom: 20px;
+  }
+
+  .gallery :hover {
+    transform: scale(1.1);
+    transition: 0.3s cubic-bezier(0.075, 0.01, 0.49, 2);
+  }
+  .overlay-content h1 {
+      display: none;
+    }
+    .overlay-content p {
+      display: none;
+    }
+    .overlay-content{
+      background-image: linear-gradient(to right, rgb(0, 0, 0,0), rgb(0, 0, 0 , 0));
+    }
+    .overlay-content a {
+      
+      font-size: 10.5vw;
+      background-color: #fca311;
+      color: #ffffff;
+      padding: 15px 55px;
+      border: none;
+      text-decoration: none;
+      border-radius: 25px;
+      margin: 10px 0;
+    }
+  }
